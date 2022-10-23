@@ -1,0 +1,55 @@
+public class practicaclase {
+    public static void main(String[] args) {
+
+        persona persona = new persona();
+        persona.setNombre("Juan");
+        persona.setEdad(40);
+        persona.setTelefono("5531804058");
+
+
+        persona persona1 = new persona();
+        persona1.setNombre("Carlos");
+        persona1.setEdad(28);
+        persona1.setTelefono("5559743540");
+
+
+        persona persona2= new persona();
+        persona2.setNombre("Diana");
+        persona2.setEdad(35);
+        persona2.setTelefono("5578963214");
+
+
+
+        System.out.println(persona.getNombre());
+        System.out.println(persona.getEdad());
+        System.out.println(persona.getTelefono());
+        System.out.println(persona1.getNombre() + " " + persona1.getEdad() + " " + persona1.getTelefono());
+        System.out.println(persona2.getNombre() + " " + persona2.getEdad() + " " + persona2.getTelefono());
+
+
+    }
+}
+class persona {
+    private String nombre;
+    private Integer edad;
+    private String telefono;
+
+    public void setNombre(String nombre){
+        this.nombre=nombre;
+    }
+    public void setEdad(Integer edad){
+        this.edad=edad;
+    }
+    public void setTelefono(String telefono){
+        this.telefono=telefono;
+    }
+    public String getNombre(){
+        return this.nombre;
+    }
+    public Integer getEdad(){
+        return this.edad;
+    }
+    public String getTelefono(){
+        return this.telefono;
+    }
+}
